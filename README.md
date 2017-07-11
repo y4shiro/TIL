@@ -17,6 +17,9 @@
 - https://github.com/azu/azu
 
 ## カテゴリ
+### GitHub
+- [[WIP]edit-issueslabel](github/edit-issueslable.md)
+
 ### Javascript
 - [[WIP]about-json](javascript/about-json.md)
 - [[WIP]learning-roadmap](javascript/learning-roadmap.md)
