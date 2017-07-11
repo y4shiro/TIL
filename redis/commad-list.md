@@ -90,5 +90,9 @@ memberがkeyに対応するセットに含まれているか否かを判定。
 ## SMEMBERS
 
 ```bash
+smembers "key"
 ```
+
+keyに対応するセット内の全てのmemberを返す。  
+これはSINTERの糖衣構文である。  
 
