@@ -18,7 +18,7 @@
 
 ## カテゴリ
 ### GitHub
-- [[WIP]edit-issueslabel](github/edit-issueslable.md)
+- [[WIP]edit-issueslabel](github/edit-issueslabel.md)
 
 ### Javascript
 - [[WIP]about-json](javascript/about-json.md)
