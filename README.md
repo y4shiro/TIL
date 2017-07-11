@@ -18,8 +18,15 @@
 
 ## カテゴリ
 ### Javascript
+- [[WIP]this](javascript/this.md)
+- [[WIP]about-json](javascript/about-json.md)
+- [[WIP]promise](javascript/promise.md)
+
 ### Rails
+- [[WIP]json-with-rails](rails/json-with-rails.md)
+
 ### Redis
 - [Command-list](redis/command-list.md)
+
 ### Ruby
 ### Vim
