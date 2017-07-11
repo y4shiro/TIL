@@ -18,8 +18,9 @@
 
 ## カテゴリ
 ### Javascript
-- [[WIP]this](javascript/this.md)
 - [[WIP]about-json](javascript/about-json.md)
+- [[WIP]learning-roadmap](javascript/learning-roadmap.md)
+- [[WIP]this](javascript/this.md)
 - [[WIP]promise](javascript/promise.md)
 
 ### Rails
