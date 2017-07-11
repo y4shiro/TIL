@@ -1,6 +1,6 @@
 # Redisコマンド一覧
 
-よく使いそうな奴を列挙
+個人的に使いそうな奴を列挙
 
 ## 参考文献
 * https://redis.io/commands
@@ -57,3 +57,25 @@ setex "key", time, value
 ```
 
 このコマンドは `SET` + `EXPIRE` を同時に実行します。
+
+# セットの操作
+## SADD
+
+```bash
+```
+
+## SREM
+
+```bash
+```
+
+## SISMEMBER
+
+```bash
+```
+
+## SMEMBERS
+
+```bash
+```
+
