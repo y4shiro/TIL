@@ -13,8 +13,8 @@
 
 ### 参考文献
 
-https://github.com/jbranchaud/til
-https://github.com/azu/azu
+* https://github.com/jbranchaud/til
+* https://github.com/azu/azu
 
 ### カテゴリ
 * Javascript
