@@ -65,13 +65,18 @@ setex "key", time, value
 sadd "key", member
 ```
 
-指定したmemberをkeyにセットする。
-追加出来た場合は"1"、既にmemberが存在している場合は"0"が返る。
+指定したmemberをkeyにセットする。  
+追加出来た場合は"1"、既にmemberが存在している場合は"0"が返る。  
 
 ## SREM
 
 ```bash
+srem "key", member
 ```
+
+指定したmemberをkeyに対応するセットから取り除く。  
+memberがkeyの中に存在しなかった場合は何も実行されない。  
+もしkeyに対応する値がセット型で無かった場合はエラーが返る。  
 
 ## SISMEMBER
 
