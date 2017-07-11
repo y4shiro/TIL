@@ -29,6 +29,21 @@ expire "key", time
 - SETで新しい値を紐付けた場合
 - DELで削除された場合
 
+## TYPE
+
+```bash
+type "key"
+```
+
+keyに格納されている値の型を返す。  
+型は下記のいずれか。  
+- none
+- string
+- list
+- set
+- zset
+- hash
+
 # 文字列型の操作
 ## SET
 
@@ -37,7 +52,6 @@ set "key", value
 ```
 
 文字列値valueをkeyにセットする。  
-String、Integerが保存可能。  
 返り値はStatus code reply  
 
 ## GET
