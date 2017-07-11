@@ -27,3 +27,7 @@ JSONデータからJavaScriptオブジェクトへ変換。
 ### JSON.stringify()
 
 JavaScriptオブジェクトからJSONデータにシリアライズ。  
+
+### JSONでは関数や正規表現リテラルは使用できない
+
+JSON.stringify()実行時に関数が除去される。  
