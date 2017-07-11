@@ -81,7 +81,11 @@ memberがkeyの中に存在しなかった場合は何も実行されない。
 ## SISMEMBER
 
 ```bash
+sismember "key", member
 ```
+
+memberがkeyに対応するセットに含まれているか否かを判定。  
+含まれている場合は"1"、無い場合は"0"を返す。  
 
 ## SMEMBERS
 
