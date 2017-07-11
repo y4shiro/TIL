@@ -14,9 +14,9 @@
 exists "key"
 ```
 
-keyが存在するか確認。
-存在する場合は"1"、存在しない場合は"0"が返る。
-keyが存在する場合、valueが空文字列でも"1"が返る。
+keyが存在するか確認。  
+存在する場合は"1"、存在しない場合は"0"が返る。  
+keyが存在する場合、valueが空文字列でも"1"が返る。  
 
 ## EXPIRE
 
@@ -24,8 +24,8 @@ keyが存在する場合、valueが空文字列でも"1"が返る。
 expire "key", seconds
 ```
 
-指定したkeyのタイムアウト時間を設定する。
-ただし、下記の場合はタイムアウトが削除される。
+指定したkeyのタイムアウト時間を設定する。  
+ただし、下記の場合はタイムアウトが削除される。  
 - SETで新しい値を紐付けた場合
 - DELで削除された場合
 
@@ -36,9 +36,9 @@ expire "key", seconds
 set "key", value
 ```
 
-文字列値valueをkeyにセットする。
-String、Integerが保存可能。
-返り値はStatus code reply
+文字列値valueをkeyにセットする。  
+String、Integerが保存可能。  
+返り値はStatus code reply  
 
 ## GET
 
@@ -46,8 +46,8 @@ String、Integerが保存可能。
 get "key"
 ```
 
-指定したkeyに対応するvalueを取得する。
-keyが存在しなかった場合は"nil"が返る。
-valueが文字列型以外だった場合、エラーが返る。
+指定したkeyに対応するvalueを取得する。  
+keyが存在しなかった場合は"nil"が返る。  
+valueが文字列型以外だった場合、エラーが返る。  
 
 ## SETEX
