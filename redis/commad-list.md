@@ -28,6 +28,7 @@ expire "key", time
 ただし、下記の場合はタイムアウトが削除される。  
 - SETで新しい値を紐付けた場合
 - DELで削除された場合
+- PERSISTでTTLを削除した場合
 
 ## TYPE
 
