@@ -17,6 +17,7 @@ exists "key"
 keyが存在するか確認。
 
 - 返り値
+
 存在する場合は"1"、存在しない場合は"0"が返る。
 keyが存在する場合、valueが空文字列でも"1"が返る。
 
@@ -44,6 +45,7 @@ set "key", value
 String、Integerが保存可能。
 
 - 返り値
+
 Status code reply
 
 ## GET
