@@ -58,11 +58,15 @@ setex "key", time, value
 
 このコマンドは `SET` + `EXPIRE` を同時に実行します。
 
-# セットの操作
+# セット型の操作
 ## SADD
 
 ```bash
+sadd "key", member
 ```
+
+指定したmemberをkeyにセットする。
+追加出来た場合は"1"、既にmemberが存在している場合は"0"が返る。
 
 ## SREM
 
