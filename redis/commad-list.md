@@ -21,10 +21,10 @@ keyが存在する場合、valueが空文字列でも"1"が返る。
 ## EXPIRE
 
 ```bash
-expire "key", seconds
+expire "key", time
 ```
 
-指定したkeyのタイムアウト時間を設定する。  
+指定したkeyのタイムアウト時間を秒数で設定する。  
 ただし、下記の場合はタイムアウトが削除される。  
 - SETで新しい値を紐付けた場合
 - DELで削除された場合
@@ -51,3 +51,9 @@ keyが存在しなかった場合は"nil"が返る。
 valueが文字列型以外だった場合、エラーが返る。  
 
 ## SETEX
+
+```bash
+setex "key", time, value
+```
+
+このコマンドは `SET` + `EXPIRE` を同時に実行します。
