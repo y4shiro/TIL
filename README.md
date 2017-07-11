@@ -2,7 +2,7 @@
 
 > Today I Learned
 
-### このリポジトリは何？
+## このリポジトリは何？
 
 日々の学びをコツコツ追加していくやつです。
 ブログよりは気軽に書けそうなので試しにやっていきます。
@@ -11,14 +11,15 @@
 
 はい
 
-### 参考文献
+## 参考文献
 
 - https://github.com/jbranchaud/til
 - https://github.com/azu/azu
 
-### カテゴリ
-- Javascript
-- Rails
-- Redis
-- Ruby
-- Vim
+## カテゴリ
+### Javascript
+### Rails
+### Redis
+- [Command-list](redis/command-list.md)
+### Ruby
+### Vim
