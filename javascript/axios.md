@@ -7,7 +7,9 @@ https://github.com/mzabriskie/axios
 
 ## 使い方
 
-```bash
+### GET
+
+```javascript
 
 axios.get('/example.json')
   .then(function (response) {
@@ -16,6 +18,23 @@ axios.get('/example.json')
   })
   .catch(function (error) {
     // error時の処理
+    console.log(error)
+  });
+
+```
+
+### POST
+
+```javascript
+
+axios.post('/user', {
+    firstName: 'Taro',
+    lastName: 'Tanaka'
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
     console.log(error)
   });
 
