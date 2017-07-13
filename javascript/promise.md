@@ -18,7 +18,7 @@ var promise = new Promise(function (resolve, reject) {
   // 非同期処理記述
 
   // リクエスト成功した場合
-  if (requiest.status === 200){
+  if (request.status === 200){
     resolve(); // 成功時のレスポンスを()内に記述
   }
   // リクエスト失敗した場合
@@ -56,7 +56,7 @@ promise.catch(function (err) {
 ```javascript
 
 var promise = new Promise(function (resolve, reject) {
-  if (requiest.status === 200){
+  if (request.status === 200){
     resolve('OK');
   }
   else {
@@ -64,7 +64,7 @@ var promise = new Promise(function (resolve, reject) {
   }
 });
 
-promise('value')
+promise(request)
 .then(function (res) {
   console.log(res); // 'OK'と出力される。
 })
@@ -73,6 +73,10 @@ promise('value')
 });
 
 ```
+
+## 複数の非同期処理を並列して実行する
+### allメソッド
+### raceメソッド
 
 ## 脚注
 [^1]: XMLHttpRequestの略
