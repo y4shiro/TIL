@@ -60,16 +60,16 @@ var promise = new Promise(function (resolve, reject) {
     resolve('OK');
   }
   else {
-    reject('NG'); // 失敗時のレスポンスを()内に記述
+    reject('NG');
   }
 });
 
 promise('value')
 .then(function (res) {
-  console.log(res);
+  console.log(res); // 'OK'と出力される。
 })
 .catch(function (err) {
-  console.log(err);
+  console.log(err); // 'NG'と出力される。
 });
 
 ```
