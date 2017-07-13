@@ -58,3 +58,28 @@ axios.all([getUserAccount(), getUserPermissions()])
   }));
 
 ```
+
+## レスポンススキーマ(レスポンスの中身)
+
+```javascript
+{
+  // サーバから取得したデータ
+  data: {},
+
+  // サーバレスポンスのステータスコード
+  status: 200,
+
+  // サーバレスポンスのステータスメッセージ
+  statusText: 'OK',
+
+  // ヘッダーの内容
+  headers: {},
+
+  // axisosリクエスト時のコンフィグ
+  config: {},
+
+  // リクエストの内容
+  request: {}
+}
+
+```
