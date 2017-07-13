@@ -19,11 +19,13 @@ var promise = new Promise(function (resolve, reject) {
 
   // リクエスト成功した場合
   if (requiest.status === 200){
+    resolve(); // 成功時の処理を()内に記述
   }
   // リクエスト失敗した場合
   else {
+    reject(); // 失敗時の処理を()内に記述
   }
-}
+});
 
 ```
 
