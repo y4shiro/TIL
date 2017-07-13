@@ -21,6 +21,7 @@
 - [[WIP]edit-issueslabel](github/edit-issueslabel.md)
 
 ### Javascript
+- [axios](javascript/axios.md)
 - [[WIP]about-json](javascript/about-json.md)
 - [[WIP]learning-roadmap](javascript/learning-roadmap.md)
 - [[WIP]this](javascript/this.md)
