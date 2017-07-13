@@ -4,9 +4,9 @@
 https://github.com/mzabriskie/axios
 
 ## Axiosとは
+PromiseベースのHTTPクライアント。  
 
 ## 使い方
-
 ### GET
 
 ```javascript
@@ -81,5 +81,20 @@ axios.all([getUserAccount(), getUserPermissions()])
   // リクエストの内容
   request: {}
 }
+
+```
+
+## 使用例
+
+```javascript
+
+axios.get('api/example.json')
+  .then(function(response){
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+);
 
 ```
