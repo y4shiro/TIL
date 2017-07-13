@@ -18,7 +18,7 @@ axios.get('/example.json')
   })
   .catch(function (error) {
     // error時の処理
-    console.log(error)
+    console.log(error);
   });
 
 ```
@@ -35,7 +35,26 @@ axios.post('/user', {
     console.log(response);
   })
   .catch(function (error) {
-    console.log(error)
+    console.log(error);
   });
+
+```
+
+### 複数同時リクエストの実行
+
+```javascript
+
+function getUserAccount() {
+  return axios.get('/user/1');
+}
+
+function getUserPermissions() {
+  return axios.get('/user/1/permissions');
+}
+
+axios.all([getUserAccount(), getUserPermissions()])
+  .then(axios.spread(function (acct, perms) {
+    // nanika
+  }));
 
 ```
