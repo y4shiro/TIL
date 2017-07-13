@@ -5,6 +5,7 @@ https://github.com/mzabriskie/axios
 
 ## Axiosとは
 PromiseベースのHTTPクライアント。  
+XMLHttpRequestをラップしたAPIで、HTTPリクエストを行うことが出来る。  
 
 ## 使い方
 ### GET
@@ -63,19 +64,19 @@ axios.all([getUserAccount(), getUserPermissions()])
 
 ```javascript
 {
-  // サーバから取得したデータ
+  // サーバの返した値
   data: {},
 
-  // サーバレスポンスのステータスコード
+  // HTTPステータスコード
   status: 200,
 
-  // サーバレスポンスのステータスメッセージ
+  // HTTPステータスメッセージ
   statusText: 'OK',
 
-  // ヘッダーの内容
+  // サーバの返したヘッダー
   headers: {},
 
-  // axisosリクエスト時のコンフィグ
+  // リクエスト時の設定
   config: {},
 
   // リクエストの内容
