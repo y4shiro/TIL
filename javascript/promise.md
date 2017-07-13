@@ -19,12 +19,35 @@ var promise = new Promise(function (resolve, reject) {
 
   // リクエスト成功した場合
   if (requiest.status === 200){
-    resolve(); // 成功時の処理を()内に記述
+    resolve(); // 成功時のレスポンスを()内に記述
   }
   // リクエスト失敗した場合
   else {
-    reject(); // 失敗時の処理を()内に記述
+    reject(); // 失敗時のレスポンスを()内に記述
   }
+});
+
+```
+
+
+## 非同期処理の連結
+
+`.then()` で成功時の処理を記述していく。  
+
+```javascript
+
+promise.then(function (res) {
+  console.log(res); // resの中身が表示される
+});
+
+```
+
+`.catch()` で失敗時の処理を指定できる。  
+
+```javascript
+
+promise.catch(function (err) {
+    console.log(err); // errの中身が表示される
 });
 
 ```
