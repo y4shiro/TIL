@@ -29,9 +29,6 @@ var promise = new Promise(function (resolve, reject) {
 
 ```
 
-
-## 非同期処理の連結
-
 `.then()` で成功時の処理を記述していく。  
 
 ```javascript
@@ -47,7 +44,32 @@ promise.then(function (res) {
 ```javascript
 
 promise.catch(function (err) {
-    console.log(err); // errの中身が表示される
+  console.log(err); // errの中身が表示される
+});
+
+```
+
+## 非同期処理の連結
+
+`.then()` や `catch()` はメソッドチェーンとして繋げて書くことも可能。  
+
+```javascript
+
+var promise = new Promise(function (resolve, reject) {
+  if (requiest.status === 200){
+    resolve('OK');
+  }
+  else {
+    reject('NG'); // 失敗時のレスポンスを()内に記述
+  }
+});
+
+promise('value')
+.then(function (res) {
+  console.log(res);
+})
+.catch(function (err) {
+  console.log(err);
 });
 
 ```
