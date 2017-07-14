@@ -76,6 +76,20 @@ console.log(total);
 
 ```
 
+配列自体を操作する場合  
+```javascript
+
+var lists = [2, 5, 9]
+lists.forEach(function(value, index, array) {
+  array[index] = value * 2;
+});
+
+// [2, 10, 18]と出力される。
+console.log(lists);
+
+```
+
+
 ## 使用例
 
 ### filter
