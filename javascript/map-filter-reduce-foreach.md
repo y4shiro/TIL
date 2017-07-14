@@ -63,10 +63,10 @@ console.log(total);
 ```
 
 ## every,some
-- every
+### every
 指定したテスト関数を配列中のすべての要素が満たした場合に true を返す。  
 
-- some
+### some
 指定したテスト関数を配列中の少なくとも 1 個の要素が満たした場合に true を返す。  
 
 結果はboolean。  
