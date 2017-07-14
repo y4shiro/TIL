@@ -43,12 +43,20 @@ console.log(filtered);
 
 ```
 
-## reduce
-アキュムレータと配列内のすべての要素に対して (左から右の順で) 関数を適用し、単一の値に還元します。  
+## reduce, reduceRight
+アキュムレータと配列内のすべての要素に対して (左から右の順で) 関数を適用し、単一の値に還元。  
+値を一つに絞り込む。  
 
+arrayは元の配列。  
+index,arrayは省略可能。  
 ```javascript
 
+var total = [0, 1, 2, 3].reduce(function(preValue, currentValue, index, array) {
+  return preValue + currretValue;
+});
 
+// 6 が出力される。
+console.log(total);
 
 ```
 
