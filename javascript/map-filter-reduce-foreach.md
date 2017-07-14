@@ -59,6 +59,10 @@ console.log(total);
 
 ```
 
+## some
+
+## every
+
 ## forEach
 配列中のそれぞれの要素について関数を呼び出します。  
 
@@ -70,3 +74,5 @@ console.log(total);
 });
 
 ```
+
+## 使用例
