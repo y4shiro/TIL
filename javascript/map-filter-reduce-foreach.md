@@ -1,5 +1,4 @@
 # mapやfilterなどのメモ
-
 ## 参考文献
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Arra://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
 
@@ -27,7 +26,7 @@ console.log(square);
 
 ## filter
 指定したフィルタリング関数が true を返す、配列中の要素を格納した新しい配列を生成。  
-条件に合うものを抽出する。  
+条件を指定して合致したものを抽出する。  
 
 arrayは元の配列。  
 index,arrayは省略可能。  
