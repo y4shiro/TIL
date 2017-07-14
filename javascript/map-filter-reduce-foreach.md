@@ -4,7 +4,7 @@ https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Ar
 
 ## これらは何？
 Arrayオブジェクトに実装されているメソッド。  
-Arrayの特定の値を探索したい場合に楽になる。  
+Arrayの特定の値を探索、処理したい場合に楽になる。  
 
 ## map
 配列内のすべての要素に対して与えられた関数を呼び出し、その結果を格納した新しい配列を生成する。  
@@ -45,6 +45,7 @@ console.log(filtered);
 ## reduce, reduceRight
 アキュムレータと配列内のすべての要素に対して (左から右の順で) 関数を適用し、単一の値に還元。  
 値を一つに絞り込む。  
+reduceは左から、reduceRightは右から処理を始める。
 
 arrayは元の配列。  
 index,arrayは省略可能。  
@@ -64,7 +65,7 @@ console.log(total);
 ## every
 
 ## forEach
-配列中のそれぞれの要素について関数を呼び出します。  
+配列中のそれぞれの要素について関数を呼び出す。  
 
 ```javascript
 
