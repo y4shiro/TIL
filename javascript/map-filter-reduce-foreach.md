@@ -77,3 +77,12 @@ console.log(total);
 ```
 
 ## 使用例
+
+### filter
+
+```javascript
+
+// userListを走査して、user.idと合致すればtrueを返す
+userList.filter(v => v.id === this.user.id).length != 0)
+
+```
