@@ -1,6 +1,8 @@
 # mapやfilterなどのメモ
 ## 参考文献
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Arra://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
+http://qiita.com/itagakishintaro/items/29e301f3125760b81302
+http://www.sejuku.net/blog/20257
 
 ## これらは何？
 Arrayオブジェクトに実装されているメソッド。  
@@ -60,9 +62,31 @@ console.log(total);
 
 ```
 
-## some
+## every,some
+- every
+指定したテスト関数を配列中のすべての要素が満たした場合に true を返す。  
 
-## every
+- some
+指定したテスト関数を配列中の少なくとも 1 個の要素が満たした場合に true を返す。  
+
+結果はboolean。  
+arrayは元の配列。index, arrayは省略可能。  
+```javascript
+
+var lists = [3, 77, 40, 805, 19]
+
+// falseが返る
+lists.every(function(value, index, array){
+  return (value >= 10);
+});
+
+// trueが返る
+lists.some(function(value, index, array){
+  return (value >= 10);
+});
+
+
+```
 
 ## forEach
 配列中のそれぞれの要素について関数を呼び出す。  
