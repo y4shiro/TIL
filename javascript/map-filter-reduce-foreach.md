@@ -1,8 +1,8 @@
 # mapやfilterなどのメモ
 ## 参考文献
-https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Arra://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
-http://qiita.com/itagakishintaro/items/29e301f3125760b81302
-http://www.sejuku.net/blog/20257
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Arra://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array
+- http://qiita.com/itagakishintaro/items/29e301f3125760b81302
+- http://www.sejuku.net/blog/20257
 
 ## これらは何？
 Arrayオブジェクトに実装されているメソッド。  
