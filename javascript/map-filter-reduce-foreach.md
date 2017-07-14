@@ -83,6 +83,6 @@ console.log(total);
 ```javascript
 
 // userListを走査して、user.idと合致すればtrueを返す
-userList.filter(v => v.id === this.user.id).length != 0)
+(userList.filter(v => v.id === this.user.id).length != 0)
 
 ```
