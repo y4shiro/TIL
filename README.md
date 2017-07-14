@@ -24,8 +24,9 @@
 - [axios](javascript/axios.md)
 - [[WIP]about-json](javascript/about-json.md)
 - [[WIP]learning-roadmap](javascript/learning-roadmap.md)
-- [[WIP]this](javascript/this.md)
+- [[WIP]map-filter-reduce-foreach](javascript/map-filter-reduce-foreach.md)
 - [[WIP]promise](javascript/promise.md)
+- [[WIP]this](javascript/this.md)
 
 ### Rails
 - [[WIP]json-with-rails](rails/json-with-rails.md)
