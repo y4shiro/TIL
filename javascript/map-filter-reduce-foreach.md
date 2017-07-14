@@ -65,6 +65,9 @@ console.log(total);
 
 ```javascript
 
-
+// 0:2, 1:5, 2:9 と出力される。
+[2, 5, 9].forEach(function(element, index, array) {
+    console.log(index + ":" + element);
+});
 
 ```
