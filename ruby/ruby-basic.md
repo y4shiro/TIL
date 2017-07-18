@@ -31,7 +31,7 @@ end
 ```Ruby
 str = %(hello, Ruby)
 puts str
-# hello, xxxx
+# hello, Ruby
 
 ruby = "Ruby"
 str2 = %(hello, "#{ruby}")
@@ -44,7 +44,8 @@ puts str2
 シングルクォートなので、変数や定数の展開が行われない。  
 
 ```Ruby
-
-
+ruby = "Ruby"
+str = %q(hello, "#{ruby}")
+puts str
+# hello, "#{ruby}"
 ```
-
