@@ -1,11 +1,14 @@
 # ActionCable関連まとめ
 ## 参考文献
+- http://qiita.com/jnchito/items/aec75fab42804287d71b
+- http://qiita.com/sasurai_usagi3/items/75a30cc0d2d0faa9dfe8
+
 ## 導入方法
-## Gemfileなど
 Rails 5.*以上ならデフォで使用できます。  
 Rails 4.*以下の場合はGemfileを追加して下さい。  
+
 ## 生成コマンド
-```Ruby
+```Bash
 
 $ rails g channel "名前" "追加するAction名"
 // 今回は"speak"という名前のチャネルを作成します。
@@ -37,30 +40,46 @@ end
 
 ```
 
-### app/assets/javascript/channels/chat.js
+### app/assets/javascript/channels/chat.coffee
 デフォだとCoffeeScriptが生成された気がするので、適宜読み替えてください。  
 
 ```JavaScript
 
-App.chat = App.cable.subscriptions.create("ChatChannel", {
-  connected: function() {
-    // Called when the subscription is ready for use on the server
-  },
+App.room = App.cable.subscriptions.create "RoomChannel",
+  connected: ->
+    # Called when the subscription is ready for use on the server
 
-  disconnected: function() {
-    // Called when the subscription has been terminated by the server
-  },
+  disconnected: ->
+    # Called when the subscription has been terminated by the server
 
-  received: function(data) {
-    // Called when there's incoming data on the websocket for this channel
-  },
+  received: (data) ->
+    # Called when there's incoming data on the websocket for this channel
 
-  speak: function() {
-    return this.perform('speak');
-  }
-});
+  speak: ->
+    @perform 'speak'
 
 ```
+
+## コントローラの作成とルーティング
+コントローラ作ってルーティングまで行います。  
+```Bash
+
+$ rails g controller chat index
+
+```
+
+```Ruby
+
+Rails.application.routes.draw do
+  root 'chat#index'
+  end
+
+```
+
+
+## 入力の受け取り
+
+## サーバ側実装
 
 ## Turbolinksとの共存
 Turbolinksが有効な場合、ActionCableのコネクションがページ遷移時でも切断されない。  
