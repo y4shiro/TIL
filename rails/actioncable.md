@@ -8,7 +8,7 @@ Rails 4.*以下の場合はGemfileを追加して下さい。
 ```Ruby
 
 $ rails g channel "名前" "追加するAction名"
-// 今回は"chat"という名前のチャネルを作成します。
+// 今回は"speak"という名前のチャネルを作成します。
 $ rails g channel chat speak
 
 ```
