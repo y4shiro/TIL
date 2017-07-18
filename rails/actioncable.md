@@ -119,7 +119,7 @@ App.room = App.cable.subscriptions.create "ChatChannel",
 
 ```
 
-
+後はView側で表示、formからメッセージ入力、Model側にメッセージ保存などが行える。  
 
 ## Turbolinksとの共存
 Turbolinksが有効な場合、ActionCableのコネクションがページ遷移時でも切断されない。  
