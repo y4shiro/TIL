@@ -49,3 +49,13 @@ str = %q(hello, "#{ruby}")
 puts str
 # hello, "#{ruby}"
 ```
+
+#### %w
+配列を作成する。配列の要素はスペース区切りで分割する。
+式の展開は行われない。
+
+```Ruby
+array = %w(one two three four)
+p array
+# ["one", "two", "three", "four"]
+```
