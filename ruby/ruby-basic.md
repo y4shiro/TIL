@@ -59,3 +59,14 @@ array = %w(one two three four)
 p array
 # ["one", "two", "three", "four"]
 ```
+
+#### %W
+配列を作成する。%w()と違い式の展開が行われる。  
+
+```Ruby
+ruby = "Ruby"
+PYTHON = 'Python'
+array = %W(#{ruby} #{PYTHON} PHP)
+p array
+# ["Ruby", "Python", "PHP"]
+```
