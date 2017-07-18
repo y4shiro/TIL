@@ -21,7 +21,7 @@ $ rails g channel chat speak
 
 ### app/channels/chat_channel.rb
 MVCで言う所のControllerに相当。  
-chat.jsからActionが呼ばれる。  
+chat.coffeeからActionが呼ばれる。  
 
 ```Ruby
 
@@ -41,11 +41,12 @@ end
 ```
 
 ### app/assets/javascript/channels/chat.coffee
+クライアント的役割がある。  
 デフォだとCoffeeScriptが生成された気がするので、適宜読み替えてください。  
 
 ```CoffeeScript
 
-App.room = App.cable.subscriptions.create "RoomChannel",
+App.room = App.cable.subscriptions.create "ChatChannel",
   connected: ->
     # Called when the subscription is ready for use on the server
 
@@ -72,14 +73,53 @@ $ rails g controller chat index
 
 Rails.application.routes.draw do
   root 'chat#index'
+end
+
+```
+
+## ストリーム接続とspeak実行
+流れは下記のとおりです。  
+- stream接続
+- chat.coffee speak実行
+- ChatChannel.rb speakアクションにてブロードキャスト実行
+- chat.coffee recieveにてメッセージ受け取り
+
+```Ruby
+
+class ChatChannel < ApplicationCable::Channel
+  def subscribed
+    stream_from "chat_channel"
   end
+
+  def unsubscribed
+    # Any cleanup needed when channel is unsubscribed
+  end
+
+  def speak
+    ChatChannel.broadcast_to('message', 'hello')
+  end
+end
+
+```
+
+```CoffeeScript
+
+App.room = App.cable.subscriptions.create "ChatChannel",
+  connected: ->
+    # Called when the subscription is ready for use on the server
+
+  disconnected: ->
+    # Called when the subscription has been terminated by the server
+
+  received: (data) ->
+    console.log(data)
+
+  speak: ->
+    @perform 'speak'
 
 ```
 
 
-## 入力の受け取り
-
-## サーバ側実装
 
 ## Turbolinksとの共存
 Turbolinksが有効な場合、ActionCableのコネクションがページ遷移時でも切断されない。  
