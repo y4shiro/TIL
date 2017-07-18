@@ -11,7 +11,7 @@ Rails 4.*以下の場合はGemfileを追加して下さい。
 ```Bash
 
 $ rails g channel "名前" "追加するAction名"
-// 今回は"speak"という名前のチャネルを作成します。
+// 今回は"chat"という名前のチャネルを作成します。
 $ rails g channel chat speak
 
 ```
@@ -43,7 +43,7 @@ end
 ### app/assets/javascript/channels/chat.coffee
 デフォだとCoffeeScriptが生成された気がするので、適宜読み替えてください。  
 
-```JavaScript
+```CoffeeScript
 
 App.room = App.cable.subscriptions.create "RoomChannel",
   connected: ->
