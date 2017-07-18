@@ -36,4 +36,6 @@
 - [Command-list](redis/command-list.md)
 
 ### Ruby
+- [[WIP]ruby-basic](ruby/ruby-basic.md)
+
 ### Vim
