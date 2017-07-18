@@ -30,6 +30,7 @@
 
 ### Rails
 - [[WIP]json-with-rails](rails/json-with-rails.md)
+- [[WIP]actioncable](rails/actioncable.md)
 
 ### Redis
 - [Command-list](redis/command-list.md)
