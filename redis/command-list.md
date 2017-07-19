@@ -117,3 +117,8 @@ keyに対応するセット内の全てのmemberを返す。
 ## HGET
 ## HMSET
 ## HMGET
+## HDEL
+## HLEN
+## HKEYS
+## HVALS
+## HGETALL
