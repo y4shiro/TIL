@@ -8,7 +8,6 @@
 - http://mayo.hatenablog.com/entry/2013/10/15/074237
 - http://blog.sojiro.me/blog/2014/07/27/rediss-data-type-and-usage/
 - http://redis-documentasion-japanese.readthedocs.io/ja/latest/topics/data-types-intro.html
-- https://shamaton.orz.hm/blog/archives/141
 
 # 全データ型対応の操作
 ## EXISTS
