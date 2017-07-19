@@ -113,3 +113,7 @@ keyに対応するセット内の全てのmemberを返す。
 これはSINTERの糖衣構文である。  
 
 # Hash型の操作
+## HSET
+## HGET
+## HMSET
+## HMGET
