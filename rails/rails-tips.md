@@ -1,10 +1,14 @@
-# Railで悩んだ・引っかかった箇所をまとめる。
-## formでユーザなど登録する際に特定のkeyが保存されない。
+# Railsで悩んだ・引っかかった箇所をまとめる
+## formでユーザなど登録する際に特定のkeyが保存されない
 Strong parametersで指定した項目がtypoしていた。  
 
 ### 例
 ```Ruby
 class UsersController < ApplicationController
+  ...
+  def create
+    @user = User.new(user_params)
+  end
   ...
   private
     def user_params
