@@ -3,9 +3,10 @@
 個人的に使いそうな奴を列挙
 
 ## 参考文献
-* https://redis.io/commands
-* http://redis.shibu.jp/commandreference/index.html
-* http://mayo.hatenablog.com/entry/2013/10/15/074237
+- https://redis.io/commands
+- http://redis.shibu.jp/commandreference/index.html
+- http://mayo.hatenablog.com/entry/2013/10/15/074237
+- http://blog.sojiro.me/blog/2014/07/27/rediss-data-type-and-usage/
 
 # 全データ型対応の操作
 ## EXISTS
@@ -45,7 +46,7 @@ keyに格納されている値の型を返す。
 - zset
 - hash
 
-# 文字列型の操作
+# String型の操作
 ## SET
 
 ```bash
@@ -73,7 +74,7 @@ setex "key", time, value
 
 このコマンドは `SET` + `EXPIRE` を同時に実行します。
 
-# セット型の操作
+# Set型の操作
 ## SADD
 
 ```bash
@@ -111,3 +112,4 @@ smembers "key"
 keyに対応するセット内の全てのmemberを返す。  
 これはSINTERの糖衣構文である。  
 
+# Hash型の操作
