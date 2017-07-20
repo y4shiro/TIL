@@ -26,12 +26,14 @@
   {
     "id": 1,
     "name": "hoge",
-    "bool": true,
+    "lang": ["JavaScript", "Ruby", "Python"],
+    "bool": true
   },
   {
     "id": 2,
     "name": "fuga",
-    "bool": false,
+    "lang": ["JavaScript", "PHP"],
+    "bool": false
   }
 ]
 ```
