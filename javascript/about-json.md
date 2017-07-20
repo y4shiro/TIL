@@ -37,8 +37,11 @@ var data = [
   }
 ];
 
-alert(data[0].id + data[0].name);
 // "1 hoge"と出力
+alert(data[0].id + data[0].name);
+
+// 下記のようにアクセスすることも可能
+alert(data[0][id] + data[0][name]);
 ```
 
 ## JSON扱うときのポイント
