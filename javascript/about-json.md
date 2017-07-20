@@ -1,6 +1,7 @@
 # JSONについて
 ## 参考文献
 - http://oki2a24.com/2015/07/26/what-is-json-and-how-to-control-with-javascript/
+- http://www.webopixel.net/javascript/91.html
 
 ## JSONとは
 - JavaScript Object Notation
