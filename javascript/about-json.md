@@ -5,8 +5,7 @@
 - http://oki2a24.com/2015/07/26/what-is-json-and-how-to-control-with-javascript/
 
 ## JSONとは
-
-- JavaScript Object Notation  
+- JavaScript Object Notation
 - 中身はテキスト
 - "key": value
 - 値は色々入る
@@ -17,6 +16,21 @@
   - Object
   - Array
 - データ構造は配列[]とオブジェクト{}で定義
+
+## 凡例
+
+```JavaScript
+[
+  {
+    "id": "1",
+    "name": "hoge",
+  },
+  {
+    "id": "2",
+    "name": "fuga",
+  }
+]
+```
 
 ## JSON扱うときのポイント
 
