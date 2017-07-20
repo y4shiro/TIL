@@ -22,7 +22,7 @@
 
 ## 凡例
 ```JavaScript
-[
+var data = [
   {
     "id": 1,
     "name": "hoge",
@@ -35,7 +35,10 @@
     "lang": ["JavaScript", "PHP"],
     "bool": false
   }
-]
+];
+
+alert(data[0].id + data[0].name);
+// "1 hoge"と出力
 ```
 
 ## JSON扱うときのポイント
