@@ -24,12 +24,14 @@
 ```JavaScript
 [
   {
-    "id": "1",
+    "id": 1,
     "name": "hoge",
+    "bool": true,
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "fuga",
+    "bool": false,
   }
 ]
 ```
