@@ -12,13 +12,13 @@
   - number
   - boolean
   - null
-  - Object
   - Array
+  - Object
 
 データ構造は配列[]とオブジェクト{}で定義する。  
 配列とオブジェクトは自由にネストさせることが可能。  
-オブジェクトのkeyは文字列のみ。  
 配列のvalueは文字列のみ。  
+オブジェクトのkeyは文字列のみ。  
 
 ## 凡例
 ```JavaScript
