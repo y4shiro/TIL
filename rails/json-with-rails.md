@@ -14,8 +14,23 @@
 ```
 
 ## Rails側でJSON編集のベストプラクティス
-### JSONをハッシュに変換してから編集
-調べて書こう。  
+### JSON -> Hash
+```Ruby
+require "json"
+
+dict = {name: yamada, age: 22}
+dict.to_json
+# => "{\"name\":\"yamada\",\"age\":22}"
+```
+
+### Hahs -> JSON
+```Ruby
+require "json"
+
+json = '{ "name" : "yamada", "age" : 14}'
+JSON.parse json
+# => {"name"=>"yamada", "age"=> 22}
+```
 
 ## jbuilder良いらしい
 ### jbuilderとは？
