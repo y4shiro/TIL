@@ -50,7 +50,7 @@ hash = { ruby: "Rails", python: "Django", java: "Play" }
 hash.each_key {|key| puts "#{key}"}
 
 hash.each_key do |key|
-  puts "#{key"}"
+  puts "#{key}"
 end
 =>
 ruby
@@ -61,7 +61,7 @@ java
 hash.each_value {|val| puts "#{val}"}
 
 hash.each_val do |val|
-  puts "#{val"}"
+  puts "#{val}"
 end
 =>
 Rails
