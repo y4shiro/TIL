@@ -15,7 +15,19 @@ hash  = {lang1: "ruby", lang2: "python", lang3: "java"}
 
 
 ## コマンド一覧
+### new(初期化)
+```Ruby
+# 下記は等価
+hash = {}
+hash = Hash.new
+
+# デフォルト値を設定
+hash = Hash.new("hello")
+hash[1]
+=> "hello"
+```
 ### each
 ### each_key, each_valueh
 ### map
 ### sort
+### merge, merge!
