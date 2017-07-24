@@ -1,5 +1,6 @@
 # RubyのHashについて
 ## 参考文献
+- http://qiita.com/yukimura1227/items/8c972efb27667dfac5cd
 - http://www.sejuku.net/blog/11429
 - http://ref.xaio.jp/ruby/classes/array/sort
 
@@ -13,8 +14,18 @@ array = ["ruby", "python", "java"]
 hash  = {lang1: "ruby", lang2: "python", lang3: "java"}
 ```
 
-## リテラル
+## シンボルと文字列
+keyには文字列とシンボルが使えるが、基本的にシンボルでやっていった方が良さそう。  
+```Ruby
+# 文字列をkeyとしたhash宣言
+string = { "lang1" => "ruby", "lang2" => "python", "lang3" => "java" }
 
+# シンボルをkeyとしたhash宣言(old)
+symbol1 = { :lang1 => "ruby", :lang2 => "python", :lang3 => "java" }
+
+# シンボルをkeyとしたhash宣言(Ruby 1.9以降)
+symbol2 = { lang1: "ruby", lang2: "python", lang3: "java" }
+```
 
 ## コマンド一覧
 ### new(初期化)
