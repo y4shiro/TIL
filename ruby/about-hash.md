@@ -27,6 +27,19 @@ hash[1]
 => "hello"
 ```
 ### each
+```Ruby
+hash = { ruby: "Rails", python: "Django", java: "Play" }
+
+hash.each {|key, val| puts "#{key}: #{val}"}
+
+hash.each do |key, val|
+  puts "#{key}: #{val}"
+end
+=>
+ruby: Rails
+python: Django
+java: Play
+```
 ### each_key, each_valueh
 ### map
 ### sort
