@@ -104,6 +104,18 @@ hash.sort { |(key1, val1), (key2, val2)| val2 <=> val1 }
 
 ### merge, merge!
 ```Ruby
+hash_1 = { Ruby: 1, Python: 2 }
+hash_2 = { Java: 3, Swift: 4 }
+
+# 通常のマージ
+hash_1.merge(hash_2)
+=> {:Ruby => 1, :Python => 2, :Java => 3, Swift => 4}
+
+# 破壊的マージ
+hash_1.merge!(hash_2)
+=> {:Ruby => 1, :Python => 2, :Java => 3, Swift => 4}
+hash_1
+=> {:Ruby => 1, :Python => 2, :Java => 3, Swift => 4}
 ```
 
 ### has_key?, key?
