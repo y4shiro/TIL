@@ -69,8 +69,20 @@ Django
 Play
 ```
 
-### map
+### map(Hashを任意の配列で返す)
 ```Ruby
+hash = { ruby: "Rails", python: "Django", java: "Play" }
+
+hash.map { |key, val| [key, val] }
+=> [[:ruby, "Rails"], [:python, "Django"], [:java, "Play"]]
+
+# Hashで返す
+Hash[hash.map { |key, val| [key, val] }]
+=> {:ruby => "Rails", :python => "Django", :java => "Play"}
+
+# Hashで返す(Ruby2.1以降)
+hash.map { |key, val| [key, val] }.to_h
+=> {:ruby => "Rails", :python => "Django", :java => "Play"}
 ```
 ### sort
 ```Ruby
