@@ -3,6 +3,7 @@
 - http://qiita.com/yukimura1227/items/8c972efb27667dfac5cd
 - http://www.sejuku.net/blog/11429
 - http://ref.xaio.jp/ruby/classes/array/sort
+- http://tech-dig.hatenablog.com/entry/2016/09/10/214426
 
 ## Hashとは
 連想配列とも呼ばれる型。  
