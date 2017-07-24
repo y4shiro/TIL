@@ -26,6 +26,7 @@ hash = Hash.new("hello")
 hash[1]
 => "hello"
 ```
+
 ### each
 ```Ruby
 hash = { ruby: "Rails", python: "Django", java: "Play" }
@@ -40,7 +41,40 @@ ruby: Rails
 python: Django
 java: Play
 ```
-### each_key, each_valueh
+
+### each_key, each_value
+```Ruby
+hash = { ruby: "Rails", python: "Django", java: "Play" }
+
+# each_key
+hash.each_key {|key| puts "#{key}"}
+
+hash.each_key do |key|
+  puts "#{key"}"
+end
+=>
+ruby
+python
+java
+
+# each_value
+hash.each_value {|val| puts "#{val}"}
+
+hash.each_val do |val|
+  puts "#{val"}"
+end
+=>
+Rails
+Django
+Play
+```
+
 ### map
+```Ruby
+```
 ### sort
+```Ruby
+```
 ### merge, merge!
+```Ruby
+```
