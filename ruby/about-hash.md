@@ -12,7 +12,7 @@ Array(配列)とHash(連想配列)の違いを下に示す。
 
 ```Ruby
 array = ["ruby", "python", "java"]
-hash  = {lang1: "ruby", lang2: "python", lang3: "java"}
+hash  = { lang1: "ruby", lang2: "python", lang3: "java" }
 ```
 
 ## シンボルと文字列
@@ -92,11 +92,11 @@ hash.map { |key, val| [key, val] }
 
 # Hashで返す
 Hash[hash.map { |key, val| [key, val] }]
-=> {:ruby => "Rails", :python => "Django", :java => "Play"}
+=> { ruby: "Rails", python: "Django", java: "Play" }
 
 # Hashで返す(Ruby2.1以降)
 hash.map { |key, val| [key, val] }.to_h
-=> {:ruby => "Rails", :python => "Django", :java => "Play"}
+=> { ruby: "Rails", python: "Django", java: "Play" }
 ```
 
 ### sort
@@ -121,13 +121,13 @@ hash_2 = { Java: 3, Swift: 4 }
 
 # 通常のマージ
 hash_1.merge(hash_2)
-=> {:Ruby => 1, :Python => 2, :Java => 3, Swift => 4}
+=> { Ruby: 1, Python: 2, Java: 3, Swift: 4 }
 
 # 破壊的マージ
 hash_1.merge!(hash_2)
-=> {:Ruby => 1, :Python => 2, :Java => 3, Swift => 4}
+=> { Ruby: 1, Python: 2, Java: 3, Swift: 4 }
 hash_1
-=> {:Ruby => 1, :Python => 2, :Java => 3, Swift => 4}
+=> { Ruby: 1, Python: 2, Java: 3, Swift: 4 }
 ```
 
 ### has_key?, key?
