@@ -120,8 +120,20 @@ hash_1
 
 ### has_key?, key?
 ```Ruby
+hash = { Ruby: 1, Python: 2 }
+
+hash.has_key?(:Ruby)
+=> true
+hash.has_key?(:Java)
+=> false
 ```
 
 ### has_value?
 ```Ruby
+hash = { Ruby: 1, Python: 2 }
+
+hash.has_value?(1)
+=> true
+hash.has_key?(3)
+=> false
 ```
