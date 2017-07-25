@@ -152,10 +152,6 @@ hash.key?(:Ruby)
 => true
 hash.key?(:Java)
 => false
-```
-
-```Ruby
-hash = { Ruby: 1, Python: 2 }
 
 hash.value?(1)
 => true
