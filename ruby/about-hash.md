@@ -29,7 +29,8 @@ symbol1 = { :lang1 => "ruby", :lang2 => "python", :lang3 => "java" }
 symbol2 = { lang1: "ruby", lang2: "python", lang3: "java" }
 ```
 
-同じシンボルでも、コード中の文脈によってコロンの位置が変わる。それさえ理解すればシンボルは問題なく使いこなせるはず。  
+同じシンボルでも、コード中の文脈によってコロンの位置が変わるので、  
+それさえ理解すればシンボルは問題なく使いこなせるはず。  
 ```Ruby
 hash = { lang1: "ruby", lang2: "python" } # ハッシュのキー表記ではコロンが後ろに来る
 hash[:lang1] = java                       # その他はコロンが前に来る
