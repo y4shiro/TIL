@@ -142,22 +142,23 @@ hash_1
 => { Ruby: 1, Python: 2, Java: 3, Swift: 4 }
 ```
 
-### has_key?, key?
+### has_key?,key? & has_value?,value?
+has_key?やhas_value?は推奨されていないらしいので気をつける。  
+
 ```Ruby
 hash = { Ruby: 1, Python: 2 }
 
-hash.has_key?(:Ruby)
+hash.key?(:Ruby)
 => true
-hash.has_key?(:Java)
+hash.key?(:Java)
 => false
 ```
 
-### has_value?
 ```Ruby
 hash = { Ruby: 1, Python: 2 }
 
-hash.has_value?(1)
+hash.value?(1)
 => true
-hash.has_key?(3)
+hash.value?(3)
 => false
 ```
