@@ -38,6 +38,6 @@
 
 ### Ruby
 - [[WIP]ruby-basic](ruby/ruby-basic.md)
-- [[WIP]about-hash](ruby/about-hash.md)
+- [about-hash](ruby/about-hash.md)
 
 ### Vim
