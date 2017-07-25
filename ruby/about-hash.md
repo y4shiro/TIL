@@ -54,6 +54,8 @@ hash[1]
 ```
 
 ### each
+each_keyやeach_valueが推奨されるらしい。  
+
 ```Ruby
 hash = { ruby: "Rails", python: "Django", java: "Play" }
 
