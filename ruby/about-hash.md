@@ -4,6 +4,7 @@
 - http://www.sejuku.net/blog/11429
 - http://ref.xaio.jp/ruby/classes/array/sort
 - http://tech-dig.hatenablog.com/entry/2016/09/10/214426
+- https://techracho.bpsinc.jp/hachi8833/2017_03_27/37659
 
 ## Hashとは
 連想配列とも呼ばれる型。  
@@ -26,6 +27,16 @@ symbol1 = { :lang1 => "ruby", :lang2 => "python", :lang3 => "java" }
 
 # シンボルをkeyとしたhash宣言(Ruby 1.9以降)
 symbol2 = { lang1: "ruby", lang2: "python", lang3: "java" }
+```
+
+同じシンボルでも、コード中の文脈によってコロンの位置が変わる。それさえ理解すればシンボルは問題なく使いこなせるはず。  
+```Ruby
+hash = { lang1: "ruby", lang2: "python" } # ハッシュのキー表記ではコロンが後ろに来る
+hash[:lang1] = java                       # その他はコロンが前に来る
+
+def my_method(arg1: arg:2)                # キーワード引数(シンボルではない)
+  pp arg1, arg2
+end
 ```
 
 ## コマンド一覧
