@@ -17,4 +17,16 @@ Today I Leaned
 自分のユーザ名でリポジトリを作り、Issueを立てる。
 優先度低くても良いかも。
 
-
+## ブランチの削除
+### ローカル
+```bash
+git branch --delete foobar
+```
+### リモート
+```bash
+git push --delete origin foobar
+```
+もしくは  
+```bash
+git push origin foobar
+```
