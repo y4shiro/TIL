@@ -40,4 +40,7 @@
 - [[WIP]ruby-basic](ruby/ruby-basic.md)
 - [about-hash](ruby/about-hash.md)
 
+### TypeScript
+- [[WIP]about-typescript](typescript/about-typescript.md)
+
 ### Vim
