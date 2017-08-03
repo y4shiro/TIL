@@ -17,6 +17,9 @@
 - https://github.com/azu/azu
 
 ## カテゴリ
+### AWS
+- [[WIP]aws-basic](aws/aws-basic.md)
+
 ### GitHub
 - [[WIP]edit-issueslabel](github/edit-issueslabel.md)
 
