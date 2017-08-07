@@ -98,8 +98,30 @@ $ rbenv rehash
 $ rbenv -v
 ```
 
+### Nginxインストール
+
+## git clone時にエラー
+EC2 Amazon Linux環境で`git clone`を行うと、下記エラーが発生する場合がある。  
+```bash
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+```
+`ssh-agent`が起動していないパターンが多いので、  
+bash_profileなどに下記を記述してやるとログイン時に自動でセットされて良い。  
+
+```bash
+# .bash_profile
+eval `ssh-agent`      // ssh-agent を起動
+ssh-add ~/.ssh/id_rsa // 秘密鍵を登録
+
+# .bash_logout
+ssh-agent -k          // ssh-agent を終了
+```
+### ssh-agent永続化
+
 ## Rails環境構築
-## node環境構築
 
 ## RDSの立ち上げ方
 ## ELB(Elastic Load Balancing)の設定など
