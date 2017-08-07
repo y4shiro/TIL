@@ -12,18 +12,32 @@
 ## EC2に接続
 
 ## Rubyに必要な物インストール
+```bash
 yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel libffi-devel libxml2 libxslt libxml2-devel libxslt-devel sqlite-devel
+```
 
 ## Git
-sudo yum install git
+```bash
+$ sudo yum install git
+```
 
 ## rbenv
+```bash
 $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 $ source .bash_profile
 $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 $ rbenv rehash
+```
+
+### rubyのインストール
+```bash
+$ rbenv install -v 2.4.1
+$ rbenv global 2.4.1
+$ rbenv rehash
+$ rbenv -v
+```
 
 ## Rails環境構築
 ## node環境構築
