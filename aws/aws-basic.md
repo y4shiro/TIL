@@ -23,8 +23,6 @@ $ sudo yum install git
 ```
 
 ## Node.js
-$ sudo yum install nodejs npm --enablerepo=epel
-
 ```bash
 $ git clone https://github.com/creationix/nvm.git ~/.nvm
 $ source ~/.nvm/nvm.sh
