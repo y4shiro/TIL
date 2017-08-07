@@ -2,6 +2,7 @@
 ## 参考文献
 - http://qiita.com/naoki_mochizuki/items/814e0979217b1a25aa3e
 - http://qiita.com/na0AaooQ/items/5bd62e630a2faf051a52
+- http://qiita.com/oishihiroaki/items/bc663eb1282d87c46e97
 
 ## EC2の立ち上げ方
 ### インスタンスの作成
@@ -23,6 +24,29 @@ $ sudo yum install git
 
 ## Node.js
 $ sudo yum install nodejs npm --enablerepo=epel
+
+```bash
+$ git clone https://github.com/creationix/nvm.git ~/.nvm
+$ source ~/.nvm/nvm.sh
+```
+
+```bash
+$ vim .bash_profile
+```
+
+```bash
+# nvm
+if [[ -s ~/.nvm/nvm.sh ]] ; then
+        source ~/.nvm/nvm.sh ;
+fi
+```
+
+```bash
+$ nvm install 7.10.1
+$ nvm use v7.10.1
+$ node -v
+```
+
 
 ## rbenv
 ```bash
