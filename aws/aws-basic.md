@@ -21,6 +21,9 @@ yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readli
 $ sudo yum install git
 ```
 
+## Node.js
+$ sudo yum install nodejs npm --enablerepo=epel
+
 ## rbenv
 ```bash
 $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
