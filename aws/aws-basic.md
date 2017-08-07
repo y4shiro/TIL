@@ -23,7 +23,8 @@ $ sudo yum install git
 ```
 
 ### GitHubとの接続
-鍵生成して、共有鍵をGitHubに登録する
+鍵生成して、共有鍵をGitHubに登録する。  
+共有鍵は`aws_git_rsa.pub`なので、適当なエディタで開いてコピーし、GitHubへ登録。  
 ```bash
 $ mkdir .ssh
 $ chmod 700 .ssh
