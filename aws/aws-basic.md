@@ -22,6 +22,40 @@ yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readli
 $ sudo yum install git
 ```
 
+### GitHubとの接続
+鍵生成して、共有鍵をGitHubに登録する
+```bash
+$ mkdir .ssh
+$ chmod 700 .ssh
+$ cd .ssh
+$ ssh-keygen -t rsa
+-----------------------------
+Enter file in which to save the key ():aws_git_rsa 
+(#ここでファイルの名前を記述して、エンター)
+Enter passphrase (empty for no passphrase): 
+(#何もせずそのままエンター)
+Enter same passphrase again: 
+(#何もせずそのままエンター)
+-----------------------------
+
+$ vim config
+-----------------------------
+# githubの場合以下を追記
+Host github
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/aws_git_rsa (#秘密鍵の設定)
+-----------------------------
+
+$ chmod 600 config
+```
+
+下記コマンドを実行して、正常に動作が行われると接続完了。  
+```bash
+$ ssh -T github
+# Hi **** You've succwwwessfully authenticated, but GitHub does not provide shell access.
+```
+
 ## Node.js
 ```bash
 $ git clone https://github.com/creationix/nvm.git ~/.nvm
