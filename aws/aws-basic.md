@@ -65,13 +65,12 @@ $ source ~/.nvm/nvm.sh
 
 ```bash
 $ vim .bash_profile
-```
-
-```bash
+-----------------------------
 # nvm
 if [[ -s ~/.nvm/nvm.sh ]] ; then
         source ~/.nvm/nvm.sh ;
 fi
+-----------------------------
 ```
 
 ```bash
