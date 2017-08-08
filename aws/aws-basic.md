@@ -3,6 +3,8 @@
 - http://qiita.com/naoki_mochizuki/items/814e0979217b1a25aa3e
 - http://qiita.com/na0AaooQ/items/5bd62e630a2faf051a52
 - http://qiita.com/oishihiroaki/items/bc663eb1282d87c46e97
+- http://sweep3092.hatenablog.com/entry/2014/12/11/163108
+- http://qiita.com/kappy0322/items/3d4293b964255b774769
 
 ## EC2の立ち上げ方
 ### インスタンスの作成
@@ -14,7 +16,7 @@
 
 ## Rubyに必要な物インストール
 ```bash
-yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel libffi-devel libxml2 libxslt libxml2-devel libxslt-devel sqlite-devel
+$ sudo yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel libffi-devel libxml2 libxslt libxml2-devel libxslt-devel sqlite-devel
 ```
 
 ## Git
@@ -98,7 +100,6 @@ $ rbenv rehash
 $ rbenv -v
 ```
 
-### Nginxインストール
 
 ## git clone時にエラー
 EC2 Amazon Linux環境で`git clone`を行うと、下記エラーが発生する場合がある。  
@@ -119,10 +120,38 @@ ssh-add ~/.ssh/id_rsa // 秘密鍵を登録
 # .bash_logout
 ssh-agent -k          // ssh-agent を終了
 ```
-### ssh-agent永続化
 
 ## Rails環境構築
+### gem install
+```bash
+$ gem update --system
+$ gem install nokogiri -- --use-system-libraries
+$ gem install --no-ri --no-rdoc rails
+$ gem install bundler
+$ rbenv rehash
+```
+
+`$gem install bundler`でエラー。  
+`mysql-devel`がインストールされてないのが原因でした。
+
+```bash
+sudo yum install mysql-devel
+```
+
+### yarnセットアップ
+
+## Nginxインストール
+```bash
+$ sudo yum install nginx
+```
+### Nginx コンフィグ
+### rails側のpermission
 
 ## RDSの立ち上げ方
+
 ## ELB(Elastic Load Balancing)の設定など
 ## ElastiCacheの立ち上げ方
+- コンソールからElastCacheを選択
+## RedisをEC2にインストール
+http://qiita.com/azusanakano/items/3de81c292117d291123c
+http://qiita.com/ueokande/items/8d00d7658259221c4a3f
